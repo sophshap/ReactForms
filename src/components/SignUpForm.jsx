@@ -22,6 +22,7 @@ export default function SignUpForm({ setToken }) {
       setError(error.message);
     }
   }
+
   return (
     <>
       <h2>Sign Up</h2>
@@ -38,7 +39,7 @@ export default function SignUpForm({ setToken }) {
         <label>
           Password:{" "}
           <input
-            minlength="8"
+            minLength="8"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
